@@ -1,6 +1,9 @@
 " run pathogen for plugins
 execute pathogen#infect()
 
+" set compatibility off
+set nocompatible
+
 " remap leader key to ,
 let mapleader=","
 
@@ -17,6 +20,9 @@ set listchars=tab:▸\ ,eol:¬
 
 " show line numbers
 set number
+
+" set ex history to a lot more
+set history=10000
 
 " allow switching between buffers more easy
 set hidden
