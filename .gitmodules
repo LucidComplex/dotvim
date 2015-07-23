@@ -1,0 +1,12 @@
+[submodule "bundle/vim-unimpaired"]
+	path = bundle/vim-unimpaired
+	url = git@github.com:tpope/vim-unimpaired.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = git@github.com:altercation/vim-colors-solarized.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = git@github.com:godlygeek/tabular.git
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git
