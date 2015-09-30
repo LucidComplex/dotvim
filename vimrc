@@ -62,12 +62,6 @@ nmap <C-Down> ]e
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
 
-" easy indentation mappings
-nmap <C-[> <<
-nmap <C-]> >>
-vmap <C-[> <gv
-vmap <C-]> >gv
-
 " visually select last edited/pasted text mapping
 nmap gV `[v`]
 
