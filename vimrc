@@ -52,6 +52,7 @@ nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 set cc=79
 
 " set appearance to use solarized colorscheme
+syntax enable
 set background=dark
 colorscheme solarized
 
