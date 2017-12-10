@@ -104,11 +104,8 @@ if has("autocmd")
 
 endif
 
-" powerline
-set laststatus=2
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
-
 " gvim font
 set guifont=Input\ Mono\ 10
+
+" airline fonts
+let g:airline_powerline_fonts = 1
