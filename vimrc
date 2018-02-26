@@ -109,3 +109,5 @@ set guifont=Input\ Mono\ 10
 
 " airline fonts
 let g:airline_powerline_fonts = 1
+" backspace fix
+set backspace=2
