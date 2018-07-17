@@ -1,5 +1,18 @@
-" run pathogen for plugins
-execute pathogen#infect()
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-surround'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/syntastic'
+Plug 'altercation/vim-colors-solarized'
+Plug 'valloric/youcompleteme'
+Plug 'vim-airline/vim-airline'
+Plug 'godlygeek/tabular'
+Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
+Plug 'mileszs/ack.vim'
+Plug 'plasticboy/vim-markdown'
+call plug#end()
 
 " set compatibility off
 set nocompatible
@@ -15,8 +28,6 @@ filetype plugin indent on
 
 " shortcut to toggle showing invisible characters
 nmap <silent><leader>l :set list!<CR>
-" set symbols for new line and tab characters
-set listchars=tab:▸\ ,eol:¬
 
 " show line numbers
 set number
@@ -54,7 +65,6 @@ set cc=79
 " set appearance to use solarized colorscheme
 syntax enable
 set background=dark
-colorscheme solarized
 
 " Bubble single lines
 nmap <C-Up> [e
