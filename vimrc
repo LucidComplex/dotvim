@@ -125,3 +125,7 @@ set guifont=Input\ Mono\ 10
 let g:airline_powerline_fonts = 1
 " backspace fix
 set backspace=2
+
+" netrw tweaks
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
