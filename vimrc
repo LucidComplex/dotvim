@@ -14,6 +14,10 @@ Plug 'mileszs/ack.vim'
 Plug 'plasticboy/vim-markdown'
 call plug#end()
 
+" incremental search
+set hlsearch
+set incsearch
+
 " set compatibility off
 set nocompatible
 
