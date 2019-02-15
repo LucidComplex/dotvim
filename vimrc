@@ -126,6 +126,18 @@ let g:airline_powerline_fonts = 1
 " backspace fix
 set backspace=2
 
+"let g:ycm_global_ycm_extra_conf = '/usr/share/vim/vimfiles/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+"let g:ycm_server_keep_logfiles = 1
+"let g:ycm_server_log_level = 'debug'
+
 " netrw tweaks
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
+
+" 
+if has('nvim')
+	tnoremap <C-v><Esc> <C-\><C-n>
+endif
+
+" search highlighting QOL
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
