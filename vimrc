@@ -33,6 +33,9 @@ filetype plugin indent on
 " shortcut to toggle showing invisible characters
 nmap <silent><leader>l :set list!<CR>
 
+" set invisible characters
+set listchars=tab:▸\ ,eol:¬
+
 " show line numbers
 set number
 
