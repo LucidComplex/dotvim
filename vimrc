@@ -144,3 +144,6 @@ endif
 
 " search highlighting QOL
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+" keep cursor centered in file
+set scrolloff=999
