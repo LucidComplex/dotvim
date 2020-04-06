@@ -1,17 +1,18 @@
 call plug#begin('~/.vim/plugged')
-Plug 'tpope/vim-surround'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/syntastic'
 Plug 'altercation/vim-colors-solarized'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'godlygeek/tabular'
+Plug 'mileszs/ack.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'plasticboy/vim-markdown'
+Plug 'preservim/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
 Plug 'valloric/youcompleteme'
 Plug 'vim-airline/vim-airline'
-Plug 'godlygeek/tabular'
-Plug 'pangloss/vim-javascript'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-commentary'
-Plug 'mileszs/ack.vim'
-Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 " incremental search
@@ -147,3 +148,14 @@ endif
 
 " keep cursor centered in file
 set scrolloff=999
+
+" set ack.vim to use ag when available
+if executable('ag')
+	let g:ackprg = 'ag --vimgrep'
+endif
+
+" disable netrw
+let loaded_netrwPlugin = 1
+
+" ctrl-p tweaks
+let g:ctrlp_custom_ignore = '\v[\/](node_modules)|\.(git|hg|svn)$'
